@@ -2,6 +2,8 @@ import { useState } from "react";
 //import "./App.css";
 import Header from "./components/Header";
 import FoodDetail from "./components/FoodDetail";
+import OrderSize from "./components/OrderSize";
+import DoughType from "./components/DoughType";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,6 +12,10 @@ function App() {
     <div id="body">
       <Header />
       <FoodDetail />
+      <div className="input-group-dough flex gap-l between container-lg">
+        <OrderSize />
+        <DoughType />
+      </div>
     </div>
   );
 }
