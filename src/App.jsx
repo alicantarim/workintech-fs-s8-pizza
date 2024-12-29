@@ -6,6 +6,8 @@ import OrderSize from "./components/OrderSize";
 import DoughType from "./components/DoughType";
 import ExtraMaterials from "./components/ExtraMaterials";
 import AddNotes from "./components/AddNotes";
+import QuantitySelection from "./components/QuantitySelection";
+import OrderSummary from "./components/OrderSummary";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,6 +25,11 @@ function App() {
       </div>
       <div>
         <AddNotes />
+      </div>
+      <hr className="margin-bottom-lg container-lg" />
+      <div className="flex between container-lg">
+        <QuantitySelection />
+        <OrderSummary />
       </div>
     </div>
   );
