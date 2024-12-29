@@ -1,0 +1,11 @@
+.header-content {
+  background-color: var(--color-red);
+  padding-bottom: 1rem;
+}
+
+.header-content p {
+  margin: 0 auto;
+  max-width: 700px;
+  color: var(--color-white);
+  text-align: start;
+}
