@@ -9,15 +9,15 @@ function App() {
   const [elections, setElections] = useState([]);
   const [errors, setErrors] = useState({ note: false, warning: false });
 
-  // Extra malzemeleri ekler ve çıkarır.
+  //! Extra malzemeleri ekler ve çıkarır.
   const addElection = (event) => {
     const { value, checked } = event.target;
 
     if (checked) {
-      // Checkbox işaretlenirse değeri "elections" array e ekler.
+      //! Checkbox işaretlenirse değeri "elections" array e ekler.
       setElections((prevElections) => [...prevElections, value]);
     } else {
-      // Checkbox işareti kaldırılırsa, array'den çıkarır.
+      //! Checkbox işareti kaldırılırsa, array'den çıkarır.
       setElections((prevElections) =>
         prevElections.filter((item) => item !== value)
       );

@@ -37,6 +37,7 @@ function OrderSize({ addElection, errors }) {
   return (
     <div>
       <div className="input-group-dough flex gap-l between container-lg">
+        {/* ORDER SIZE SECTION START */}
         <div className="chooseSize flex column">
           <label className="font-size-l">
             <strong>Boyut Seç *</strong>
@@ -58,7 +59,7 @@ function OrderSize({ addElection, errors }) {
         </div>
         {/* ORDER SIZE SECTION END */}
 
-        {/* ORDER DOUrH TYPE SECTION START */}
+        {/* ORDER DOUGH TYPE SECTION START */}
         <div className="chooseDoughType flex column">
           <label
             htmlFor="dough"
@@ -86,7 +87,9 @@ function OrderSize({ addElection, errors }) {
             </select>
           </label>
         </div>
+        {/* ORDER DOUGH TYPE SECTION END */}
       </div>
+      {/* EXTRA MATERIALS SECTION START */}
       <div className="extra-materials container-lg">
         <h2>Ek Malzemeler</h2>
         <p>En fazla 10 malzeme seçebilirsiniz. Tanesi 5 TL</p>
@@ -111,6 +114,7 @@ function OrderSize({ addElection, errors }) {
           </div>
         )}
       </div>
+      {/* EXTRA MATERIALS SECTION END */}
     </div>
   );
 }

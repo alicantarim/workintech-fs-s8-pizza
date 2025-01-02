@@ -11,14 +11,14 @@ function QuantitySelection({ elections }) {
     setCount(count + 1);
   };
 
-  // Sipariş adedini azaltır.
+  //! Sipariş adedini azaltır.
   const decrement = (event) => {
     event.preventDefault();
     count > 1 ? setCount(count - 1) : setCount(1);
   };
 
-  // Sipariş hazır hale geldiğinde, "Sipariş ver" butonunuyla action tetiklenir.
-  // Ekranda "Sipariş Verildi" alert olarak gösterir.
+  //! Sipariş hazır hale geldiğinde, "Sipariş ver" butonunuyla action tetiklenir.
+  //! Ekranda "Sipariş Verildi" alert olarak gösterir.
   const handleOrderCompleted = (event) => {
     event.preventDefault();
     alert("Sipariş Verildi");
